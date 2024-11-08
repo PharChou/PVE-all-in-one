@@ -25,16 +25,18 @@ qm importdisk 101 /var/lib/vz//template/iso/OpenWrt.img local-lvm #代码的格�
 ```ruby
 vi /etc/config/network
 ```
-      按“i”进入编辑模式，修改OpenWrt的ip地址即路由器的登陆地址  
-      修改完成后按esc，输入
+
+按“i”进入编辑模式，修改OpenWrt的ip地址即路由器的登陆地址  
+修改完成后按esc，输入
 ```ruby
 :wq
-```    
+``` 
 15. 修改登录密码，输入
 ```ruby
 passwd
 ```
-      将你想要的登陆密码输入2遍  
+
+将你想要的登陆密码输入2遍  
 16. 重启路由
 ```ruby
 reboot
