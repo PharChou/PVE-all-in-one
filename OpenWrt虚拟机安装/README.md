@@ -37,4 +37,5 @@ passwd
 ```ruby
 reboot
 ```
+17. 网页登陆Openwrt，设置lan口网关，DNS，关闭DHCP，保存并应用即可
 
