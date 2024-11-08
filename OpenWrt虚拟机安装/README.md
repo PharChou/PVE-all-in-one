@@ -1,10 +1,10 @@
 # 简介  
 创建Openwrt虚拟机并设置为旁路由  
 # 创建Openwrt虚拟机  
-固件下载，这里推荐ImmortalWrt，镜像比较干净，后续需要自己安装插件  
-https://firmware-selector.immortalwrt.org
-可以根据自己的主机型号进行选择，一般选择ext4.img格式的固件，方便扩容
-新手也可以选择iStoreOS
+固件下载，这里推荐ImmortalWrt，镜像比较干净，后续需要自己安装插件    
+https://firmware-selector.immortalwrt.org  
+可以根据自己的主机型号进行选择，一般选择ext4.img格式的固件，方便扩容  
+新手也可以选择iStoreOS  
 ## 安装步骤
 1. 选择local>>ISO镜像,上传OpenWrt.img镜像文件，注意任务完成后，复制镜像文件地址，放在记事本备用
 2. 创建Openwrt虚拟机，设置VMID和虚拟机名称
@@ -25,8 +25,8 @@ qm importdisk 101 /var/lib/vz//template/iso/OpenWrt.img local-lvm #代码的格�
 ```ruby
 vi /etc/config/network
 ```
-  按“i”进入编辑模式，修改OpenWrt的ip地址即路由器的登陆地址  
-  修改完成后按esc，输入
+    按“i”进入编辑模式，修改OpenWrt的ip地址即路由器的登陆地址  
+    修改完成后按esc，输入
 ```ruby
 :wq
 ```
@@ -34,7 +34,7 @@ vi /etc/config/network
 ```ruby
 passwd
 ```
-  将你想要的登陆密码输入2遍  
+    将你想要的登陆密码输入2遍  
 16. 重启路由
 ```ruby
 reboot
