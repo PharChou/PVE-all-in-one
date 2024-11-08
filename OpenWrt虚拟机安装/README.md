@@ -34,7 +34,7 @@ vi /etc/config/network
 15. 修改登录密码，输入
 ```ruby
 passwd
-```
+```   
 
     将你想要的登陆密码输入2遍  
 16. 重启路由
