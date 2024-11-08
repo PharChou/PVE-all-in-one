@@ -21,22 +21,18 @@ qm importdisk 101 /var/lib/vz//template/iso/OpenWrt.img local-lvm #代码的格�
 11. 选择虚拟机>>硬件，双击未使用的硬盘，格式改为SATA
 12. 选择虚拟机>>选项，将开机自启动更改为是，引导顺序将SATA调整至第一项并打勾
 13. 开启虚拟机，自动安装，界面不动后按回车进入系统
-14. 输入下面代码修改ip
+14. 输入下面代码修改ip,按“i”进入编辑模式，修改OpenWrt的ip地址即路由器的登陆地址  
 ```ruby
 vi /etc/config/network
 ```
-
-按“i”进入编辑模式，修改OpenWrt的ip地址即路由器的登陆地址  
 修改完成后按esc，输入
 ```ruby
 :wq
 ``` 
-15. 修改登录密码，输入
+15. 输入下面代码修改登录密码
 ```ruby
 passwd
 ```
-
-将你想要的登陆密码输入2遍  
 16. 重启路由
 ```ruby
 reboot
