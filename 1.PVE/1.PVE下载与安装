@@ -63,8 +63,8 @@ nano /etc/fstab
 按照提示操作，设置管理网口（默认插网线的那个口），管理密码，邮箱（随意），IP，网关，DNS，安装后自动重启  
 ### PVE换源  
 ```ruby
-wget https://mirrors.ustc.edu.cn/proxmox/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg
-echo "#deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise" > /etc/apt/sources.list.d/pve-enterprise.list
+wget https://mirrors.ustc.edu.cn/proxmox/debian/proxmox-release-bullseye.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bullseye.gpg  
+echo "#deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise" > /etc/apt/sources.list.d/pve-enterprise.list  
 echo "deb https://mirrors.ustc.edu.cn/proxmox/debian/pve bullseye pve-no-subscription" > /etc/apt/sources.list.d/pve-no-subscription.list
 ```
 ### Debian换源  
@@ -75,11 +75,11 @@ nano /etc/apt/sources.list
 ```
 2. Sources.list加入源  
 ```ruby
-deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-# deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
-# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
-# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
+deb http://mirrors.ustc.edu.cn/debian stable main contrib non-free  
+# deb-src http://mirrors.ustc.edu.cn/debian stable main contrib non-free  
+deb http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free  
+# deb-src http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free  
+# deb http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free  
 # deb-src http://mirrors.ustc.edu.cn/debian stable-proposed-updates main contrib non-free
 ```
 3. Ctrl+X，Y确认，回车退出
